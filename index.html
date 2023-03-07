@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Basic</title>
+</head>
+
+<body>
+    <h1 id="sample">where do want to go ?</h1>
+    <h2>Travel Destinations</h2>
+    <p>Plan your next adventures</p>
+    <ul id="destinations">
+        <li>Roma</li>
+        <li>Paris</li>
+        <li class="promo">Rio de Janerio</li>
+        <button>Aksi</button>
+    </ul>
+    <!-- load file jquery -->
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("p").hide();
+            });
+        });
+
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#destinations").text("Rome, Paris or Rio ?")
+                $("#destinations").add()
+            })
+        })
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $(".promo").text('Bali')
+            })
+        })
+    </script>
+</body>
+
+</html>
