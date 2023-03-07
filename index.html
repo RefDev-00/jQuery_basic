@@ -32,6 +32,12 @@
         <li>Bali</li>
     </ul>
     <button>Aksi</button>
+
+    <li class="vacation">
+        <h2>Hawaiian Vac ...</h2>
+        <button>Get Price</button>
+    </li>
+
     <!-- load file jquery -->
     <script src="js/jquery-3.6.3.min.js"></script>
 
@@ -58,6 +64,13 @@
             $("button").click(function () {
                 $(".promo").text('Bali')
             })
+        })
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            var price = $('<p>From $399.99</p>');
+            $('.vacation').append(price);
         })
     </script>
 
